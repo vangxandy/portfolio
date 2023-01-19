@@ -1,0 +1,273 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <!-- Theme Made By www.w3schools.com - No Copyright -->
+  <title>Portfolio for Andy Vang</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <script src="https://use.fontawesome.com/releases/v5.15.3/js/all.js" crossorigin="anonymous"></script>
+  <link rel="stylesheet" href="font-awesome/css/font-awesome.min.css">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+  <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Pacifico&display=swap" rel="stylesheet">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+  <style>
+  body {
+    font-family: 'Pacifico', cursive;
+    line-height: 1.8;
+    color: #f5f6f7;
+  }
+  p {font-size: 16px;}
+  .margin {margin-bottom: 15px;}
+ 
+  .bg-1 { 
+    background-color: #1a53bc; /* Green */
+    color: #ffffff;
+    
+  }
+  .bg-2 { 
+    background-color: #474e5d; /* Dark Blue */
+    color: #ffffff;
+  }
+  .bg-3 { 
+    background-color: #ffffff; /* White */
+    color: #555555;
+  }
+  .bg-4 { 
+    background-color: #2f2f2f; /* Black Gray */
+    color: #fff;
+  }
+  .bg-5 {
+    color: #555555;
+  }
+  .bg-6 { 
+    background-color: #2f2f2f; /* Black Gray */
+    color: #fff;
+  }
+  .container-fluid {
+    padding-top: 70px;
+    padding-bottom: 70px;
+  }
+  .navbar {
+    padding-top: 15px;
+    padding-bottom: 15px;
+    border: 0;
+    border-radius: 0;
+    margin-bottom: 0;
+    font-size: 12px;
+    letter-spacing: 5px;
+    
+  }
+  .navbar-nav  li a:hover {
+    color: #7b1abc !important;
+  }
+  .ul1  {
+    display: inline-block;
+    text-align: left;
+  }
+  .p1 {
+    padding-left: 250px;
+  }
+  .footerIcon:hover{ 
+    color: red;
+  }
+
+  </style>
+  <script>
+      $(document).ready(function(){
+        // Add click event listener to the links
+        $("a").click(function(e){
+          // Get the href attribute of the link that was clicked
+          var section = $(this).attr("href");
+          if(section === "#"){
+            e.preventDefault();
+            $("html, body").animate({
+              scrollTop: 0
+            }, 1000);
+          }else{
+            // Get the offset of the section
+            var offset = $(section).offset().top;
+            // Use the scrollTop method to smoothly scroll to the section
+            $("html, body").animate({
+              scrollTop: offset
+            }, 1000);
+          }
+        });
+      });
+
+
+  </script>
+</head>
+
+<body>
+<!-- Navbar -->
+<nav class="navbar navbar-default navbar-fixed-top">
+  <div class="container">
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>                        
+      </button>
+      <div style="padding-left: 170px;">
+      <a class="navbar-brand" href="#"><i class="fa fa-home" aria-hidden="true"></i></a>
+      </div>
+    </div>
+    <div class="collapse navbar-collapse" id="myNavbar">
+      <ul class="nav navbar-nav navbar-right" style="padding-right: 65px;">
+        <li><a href="#EDUCATION">EDUCATION</a></li>
+        <li><a href="#WORK">WORK</a></li>
+        <li><a href="#KEYWORDS">KEYWORDS</a></li>
+        <li><a href="#RESUME">RESUME</a></li>
+      </ul>
+    </div>
+  </div>
+</nav>
+
+<!-- First Container -->
+
+<div class="container-fluid bg-1 text-center">
+  <h3 class="margin">PROFILE</h3>
+  <img src="images/mySelf.jpg" class="img-responsive img-circle margin" style="display:inline" alt="Bird" width="350" height="350">
+  <div style="padding-left: 250px; padding-right: 250px;">
+  <h3 class="text-justify">My name is Andy Vang, and this is my Portfolio template that I am using to create Bootstrap and JavaScript(Jquery) for this Web page. Addtionally, as of December 2022, I was able to achieve my Computer Programming Associate Degree with also getting Web Development Certificate.</h3>
+  </div>
+</div>
+
+<!-- Second Container -->
+<div class="container-fluid bg-2 text-center" id="EDUCATION">
+  <h3 class="margin">Education</h3>
+  <hr style="border: 1px solid white;"/>
+  <div class="row">
+    <div class="col-sm-6">
+      <p>HighSchool Diploma</p>
+    </div>
+    <div class="col-sm-6">
+      <p>June 2019</p>
+    </div>  
+  </div>
+  <hr style="border: 1px solid white;"/>
+  <div class="row">
+    <div class="col-sm-6">
+      <p>Front-End Developer</p>
+    </div>
+    <div class="col-sm-6">
+      <p>December 2022</p>
+    </div>
+  </div>
+  <hr style="border: 1px solid white;"/>
+  <div class="row">
+    <div class="col-sm-6">
+      <p>Computer Programming</p>
+    </div>
+    <div class="col-sm-6">
+      <p>December 2022</p>
+    </div>
+    <div class="col-sm-6">
+      <p>Saint Paul College</p>
+    </div>
+    <div class="col-sm-6">
+      <p>AAS Degree</p>
+    </div>
+  </div>
+  <hr style="border: 1px solid white;"/>  
+
+
+  </div>  
+</div>
+
+<!-- Third Container (Grid) -->
+<div class="container-fluid bg-3 text-center" id="WORK">    
+  <h3 class="margin">WORK HISTORY</h3><br>
+  <hr style="border: 1px solid grey;"/>
+<div class="row">
+  <div class="text-justify">
+    <p class="p1">September 2021 - Work-Study</p>
+    <p class="p1">Information Technology Help-Desk</p>
+  </div>
+  <div class="text-justify">
+    <p style="padding-left: 330px; padding-right: 350px;">I help assist students that are having trouble with any Technology school related issue. I also deal with Reimaging Dell Computers and also checking out laptops for students.</p>
+  </div>
+  <hr style="border: 1px solid grey;"/>
+  <div class="text-justify">
+    <p class="p1">Janurary 2021 - Assembly</p>
+    <p class="p1">Medical Manufacturing</p>
+  </div>
+  <div class="text-justify">
+    <p style="padding-left: 330px; padding-right: 350px;">Working in a assembly line preparing little Manufacturing medical supply. Ready to be deploy to medical hospitals.</p>
+  </div>
+</div>
+</div>
+
+<div class="container-fluid bg-4 text-center" id="KEYWORDS">
+    <h3 class="margin">KEYWORDS</h3>
+    <div class="row">
+      <div class="col-sm-6" style="padding-left: 150px;">
+        <ul class="ul1">
+          <li>Leadership</li>
+          <li>Retail Experience</li>
+          <li>Troubleshooting Chromebooks</li>
+          <li>Adaptability</li>
+          <li>Troubleshooting Dell's Computer</li>
+          <li>Software Troubleshooting</li>
+          <li>CSS</li>
+          <li>JavaScript</li>
+          <li>Basic Window 10 Knowledge</li>
+        </ul>
+      </div>
+      <div class="col-sm-6" style="padding-right: 400px;"> 
+        <ul class="ul1">
+          <li>Customer Service</li>
+          <li>Installing and Repair Computers Hardware</li>
+          <li>Active Listening</li>
+          <li>Communication</li>
+          <li>Reimaging Computer</li>
+          <li>HTML</li>
+          <li>Responsive Design</li>
+          <li>Jquery</li>
+        </ul>
+      </div>
+    </div>
+</div>
+
+<div class="container-fluid bg-5 text-center" id="RESUME">
+    <h3 class="margin">RESUME</h3>
+    <a class="btn btn-default btn-lg" style="background-color: grey;" href="resume.pdf">
+      <i class="fas fa-file-alt"  aria-hidden="true"></i>
+        PDF Format
+    </a>
+    <button class="btn btn-default btn-lg" data-target="#myModal" data-toggle="modal" style="background-color: grey;">CONTACT</button>
+    <div class="modal" tabindex="-1" id="myModal">
+      <div class="modal-dialog">
+          <div class="modal-content">
+              <div class="modal-header">
+                  <h5 class="modal-title" style="font-size: 2.5em;">Contact</h5>
+                  <button type="button" class="close" data-dismiss="modal">
+                      <span>&times;</span>
+                  </button>
+              </div>
+              <div class="modal-body">
+                  <p class="contact-info">Email: andyvang108@gmail.com</p>
+                  <p class="contact-info">Phone: 651-900-5506</p>
+                  <p class="contact-info">Alternative Email: vangxandy@gmail.com</p>
+              </div>
+          </div>
+      </div>
+  </div>
+</div>
+
+<!-- Footer -->
+<footer class="container-fluid bg-6 text-center">
+    <div>
+      <a href="https://www.linkedin.com/in/andy-vang-341a46220/"><i class="fab fa-fw fa-linkedin footerIcon" style="font-size: 60px; margin-right: 150px;" aria-hidden="true"></i></a>
+      <a href="https://github.com/loftxwings/templatefreelance"><i class="fab fa-fw fa-github footerIcon" style="font-size: 60px; margin-right: 150px;" aria-hidden="true"></i></a>
+      <a href="https://www.youtube.com/channel/UCLbsW7aTFlLRvs1PBM8VzyA"><i class="fab fa-fw fa-youtube footerIcon" style="font-size: 60px; margin-right: 150px;" aria-hidden="true"></i></a>
+      <a href="https://twitter.com/andyvang108"><i class="fab fa-fw fa-twitter footerIcon" style="font-size: 60px;" aria-hidden="true"></i></a>
+    </div>
+</footer>
+
+</body>
+</html>
